@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa3410532586c32459a84bc0357cf825, type: 3}
+  m_Name: FishFactory 1
+  m_EditorClassIdentifier: 
+  HedgehogPrefab: {fileID: 7171845502136427960, guid: d1f24c39b67719a4cb99010361cbd87b, type: 3}
+  BlueSergeonPrefab: {fileID: 7863894313956537660, guid: 70715c801e28bde4086e31178f1bc71a, type: 3}
+  ClounPrefab: {fileID: 3794489906584506927, guid: 9d8c30dbad54b0a48bbe1f84706e9eef, type: 3}

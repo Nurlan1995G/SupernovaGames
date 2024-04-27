@@ -1,0 +1,1388 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.16f1 (d2c21f0ef2f1) revision 13812255'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.17763) 64bit EnterpriseS' Language: 'ru' Physical Memory: 8044 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Unity\2020.3.33f1\2022.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Unity Ucheba, Game 3d/Shark3D
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60553
+Successfully changed project path to: D:/Unity Ucheba, Game 3d/Shark3D
+D:/Unity Ucheba, Game 3d/Shark3D
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27484] Host "[IP] 192.168.1.66 [Port] 0 [Flags] 2 [Guid] 3471537547 [EditorId] 3471537547 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27484] Host "[IP] 192.168.1.66 [Port] 0 [Flags] 2 [Guid] 3471537547 [EditorId] 3471537547 [Version] 1048832 [Id] WindowsEditor(7,User-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 14.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.16f1 (d2c21f0ef2f1)
+[Subsystems] Discovering subsystems at path C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity Ucheba, Game 3d/Shark3D/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX250 (ID=0x1d13)
+    Vendor:   NVIDIA
+    VRAM:     1968 MB
+    Driver:   31.0.15.5161
+Initialize mono
+Mono path[0] = 'C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Unity/2020.3.33f1/2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015229 seconds.
+- Loaded All Assemblies, in  1.038 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 442 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.276 seconds
+Domain Reload Profiling: 2313ms
+	BeginReloadAssembly (401ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (92ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (380ms)
+		LoadAssemblies (398ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (374ms)
+			TypeCache.Refresh (371ms)
+				TypeCache.ScanAssembly (340ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1278ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1130ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (720ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (283ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.525 seconds
+Refreshing native plugins compatible for Editor in 5.37 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.265 seconds
+Domain Reload Profiling: 3789ms
+	BeginReloadAssembly (354ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (82ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (981ms)
+		LoadAssemblies (677ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (510ms)
+			TypeCache.Refresh (449ms)
+				TypeCache.ScanAssembly (409ms)
+			ScanForSourceGeneratedMonoScriptInfo (44ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2267ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1635ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (82ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (139ms)
+			ProcessInitializeOnLoadAttributes (1362ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 3.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3667 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (131.3 KB). Loaded Objects now: 4133.
+Memory consumption went from 145.0 MB to 144.8 MB.
+Total: 4.343100 ms (FindLiveObjects: 0.333500 ms CreateObjectMapping: 0.312100 ms MarkObjects: 3.553600 ms  DeleteObjects: 0.142700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4539175.982299 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb79869bac5aa3a8f632424f778f728') in 0.424517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b08c6080d59b31f7937bdaa883bde81') in 0.063326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.497850 seconds.
+  path: Assets/Project/Resources/StaticData/FishFactory 1.asset
+  artifactKey: Guid(3daa46272505f6947bcc026680de7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/StaticData/FishFactory 1.asset using Guid(3daa46272505f6947bcc026680de7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c78605dd4aca90bc7778a00f499c774') in 0.001754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 76.967795 seconds.
+  path: Assets/Project/Resources/StaticData/FishFactory 1.asset
+  artifactKey: Guid(3daa46272505f6947bcc026680de7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/StaticData/FishFactory 1.asset using Guid(3daa46272505f6947bcc026680de7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5c554ddf1471ccdac7f1e0f6ed657d') in 0.399882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 78
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.717 seconds
+Refreshing native plugins compatible for Editor in 3.82 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.982 seconds
+Domain Reload Profiling: 3699ms
+	BeginReloadAssembly (245ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (472ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (2983ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1954ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (110ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (223ms)
+			ProcessInitializeOnLoadAttributes (1504ms)
+			ProcessInitializeOnLoadMethodAttributes (97ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 8.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.9 KB). Loaded Objects now: 4156.
+Memory consumption went from 141.7 MB to 141.6 MB.
+Total: 8.011800 ms (FindLiveObjects: 0.486400 ms CreateObjectMapping: 0.414100 ms MarkObjects: 6.915200 ms  DeleteObjects: 0.195100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 218.795816 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47edcc90bd3ce85da9c0c32705f5e87') in 0.305862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 17.443514 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2803545de10f2e07a586b34a8af75064') in 0.068112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 7.700447 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8003853a0fa779e702c24c8fba459037') in 0.043258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 8.664030 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4b1f4cde4aa457a4d2923402746c9e') in 0.047313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.174060 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5349113e63f2de658f72779e5a4878') in 0.078174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.742936 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcce7c41816bbe09fc78080cebb3c7db') in 0.073436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 9.793687 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890b862e015b50afb710e9e2d6eff076') in 0.073507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.070147 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb8405f982a66950b492825c5984f2f7') in 0.510666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.133037 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4515afededbca4b97f10a21871ab4378') in 0.053818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 10.828355 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdfd96e0fa870a416e0acde1d0e3cfb7') in 0.067016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.087353 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e19fb5657f2bd133129749f2758b73') in 0.360894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.387459 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a16cd03037e9f3d7e7fd3936b041732') in 0.059247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.366752 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4c05b565a003d6dd787d39681f0fd7') in 0.071361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.083529 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bce6f78eb904fd0d54023b120c76fec') in 0.079155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.642338 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22361a6d81d73d7c22064e7ebd9cba2c') in 0.062128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.125370 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04d7afa36387dd84af5a75bd8c60dec') in 0.060743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 3.668824 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740d2ec11ce667b733b05539ea5f0f12') in 0.071501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 17.372259 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1062ae6506112ab5f3eee4d9d8d85f30') in 0.054216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 7.081101 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffd27700b6225cadecfe3002da73e67') in 0.074958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.006575 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c91f754400f64b3a7e5dd504601d27a') in 0.061397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.154219 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f681b236a4d5a3de09679758039e362') in 0.058145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 45.223792 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1a1f128bc375592753ed2d92b03c34') in 0.060024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.589935 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a352373353202a0083a72fcc10361525') in 0.062021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.320568 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d64436ac1c90b9715bd5b35f842be4') in 0.336630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.968442 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65dea4b7b27154b03cfab3d5a4696766') in 0.053562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.216935 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b577e4d19a73d11e6fd6603ba12c9d9b') in 0.311470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.821388 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a528ed0b10ec2ab36835130101c0a4') in 0.051108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 0.875833 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d49b7d951f7a36dd6c0d50b3a1948dd') in 0.047785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.322861 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8714812f79876ee38fdcf1f4a7c4b9b') in 0.077762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.496650 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a730ce405d0710dfa0a38d9afc5232e') in 0.309906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 3.469045 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4859453380e883ddbf4987809019cf6') in 0.073738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.010521 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0a67898ed077f9e9ca74fd08e253c4') in 0.047697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 15.211912 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2d598af401004f9168446fdee64a8c') in 0.063271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.069893 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d9ee60ba153592a8accef6a71377aef') in 0.059988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.239366 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e51e84ceaba2b1604bcb5b602f99cf') in 0.128039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.214453 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6caee56a4f1ce04812c876354f42ff') in 0.064231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.964758 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b3c57f7de74f168293534a0f42ccfa') in 0.053924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.601219 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9986f145cd50fae5b7f1728bf2ccc5e1') in 0.055964 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.113809 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419ae8186cf7d8ce6ce4f4a9d489fab6') in 0.057442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.992452 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184a16bf3a85b07cb23a1add74079494') in 0.069227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.597000 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee801f4be7f28529e058c30a0cb0c323') in 0.069743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.685 seconds
+Refreshing native plugins compatible for Editor in 5.61 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.846 seconds
+Domain Reload Profiling: 3532ms
+	BeginReloadAssembly (240ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (310ms)
+		LoadAssemblies (413ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2848ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1512ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (80ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (182ms)
+			ProcessInitializeOnLoadAttributes (1172ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 5.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.9 KB). Loaded Objects now: 4171.
+Memory consumption went from 143.7 MB to 143.6 MB.
+Total: 7.000300 ms (FindLiveObjects: 0.505900 ms CreateObjectMapping: 0.540200 ms MarkObjects: 5.857600 ms  DeleteObjects: 0.095300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 88.131251 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b65f56d53cbeb4569c81b78ee9dd02') in 0.375511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 3.513787 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9dc642f3709f25ca47489e75283b9c') in 0.047599 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.245636 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e091cda3347ebc0a53e3df72c00f0c8') in 0.056424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.415978 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030b2490fd918696ad4cd98518c59c12') in 0.073274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.206482 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3702a7125f9eed3d3c6b539d4dcb8ae3') in 0.065918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.677283 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142f0676c395a2ce0407dbe7958bbc73') in 0.074247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 3.457081 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6285ededcc2d5bc88b74407c9f62f7f') in 0.046967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.316008 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0eec8ddfe772e9aa3af082afb5ebd5a') in 0.052726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.078322 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c80f6cfbcc064dae19182b714193d6') in 0.108116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.465148 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39a01dc8720b4552a4f54cc35b805f9') in 0.053392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.748 seconds
+Refreshing native plugins compatible for Editor in 3.99 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.748 seconds
+Domain Reload Profiling: 3496ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (365ms)
+		LoadAssemblies (480ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (2749ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1446ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (81ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (1068ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 7.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.8 KB). Loaded Objects now: 4186.
+Memory consumption went from 145.6 MB to 145.5 MB.
+Total: 6.886500 ms (FindLiveObjects: 0.522500 ms CreateObjectMapping: 0.489500 ms MarkObjects: 5.769400 ms  DeleteObjects: 0.103300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.840 seconds
+Refreshing native plugins compatible for Editor in 4.48 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.044 seconds
+Domain Reload Profiling: 3883ms
+	BeginReloadAssembly (294ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (391ms)
+		LoadAssemblies (530ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (3045ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1595ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (92ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (196ms)
+			ProcessInitializeOnLoadAttributes (1213ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 6.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.8 KB). Loaded Objects now: 4201.
+Memory consumption went from 147.8 MB to 147.7 MB.
+Total: 10.741300 ms (FindLiveObjects: 0.433900 ms CreateObjectMapping: 0.450000 ms MarkObjects: 9.716200 ms  DeleteObjects: 0.139900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.702 seconds
+Refreshing native plugins compatible for Editor in 5.93 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.617 seconds
+Domain Reload Profiling: 4320ms
+	BeginReloadAssembly (268ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (320ms)
+		LoadAssemblies (446ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (3619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1744ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (98ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (1389ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 7.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.8 KB). Loaded Objects now: 4216.
+Memory consumption went from 149.8 MB to 149.7 MB.
+Total: 10.076100 ms (FindLiveObjects: 1.400400 ms CreateObjectMapping: 1.266100 ms MarkObjects: 7.152600 ms  DeleteObjects: 0.255300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 179.200412 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3d3683665ffed850aa07b1ab815f99') in 0.223222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.462567 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6711bd0131d253953b4684fe5080a83') in 0.062352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.745949 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38040d252029319b1a690a1a910e0c7') in 0.067387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.053299 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0088e00e21e1834f0d4ade4431f27f1f') in 0.056441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.051968 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb0591a4eefaa1fa6732a4e4763de45') in 0.066771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 9.935211 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa05c32287b404279df4f3c5be98d9f2') in 0.043154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.276406 seconds.
+  path: Assets/Project/Resources/Fish/Cloun Variant.prefab
+  artifactKey: Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Cloun Variant.prefab using Guid(9d8c30dbad54b0a48bbe1f84706e9eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67908996b56980e12a5df7b5ed3d1ac') in 0.070761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 6.097371 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd091a9bd3102508f471d5ae065d3c2') in 0.180424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.696112 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d5238a678cc815fa0ee759b57054a7') in 0.059845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 4.603065 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23d0e33fd58e058bb35fca152439863') in 0.322257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 9.771863 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0bf454fd93c937e0c0363a4bb60ae7') in 0.056487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 5.667863 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23da0f7ed4bf4807c22a5a51b853240') in 0.055965 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.692877 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dc86b12836740bc21812185f993d3e9') in 0.057791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 2.343287 seconds.
+  path: Assets/Project/Resources/Fish/Hedgehog Variant.prefab
+  artifactKey: Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/Hedgehog Variant.prefab using Guid(d1f24c39b67719a4cb99010361cbd87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c79f2fb18f189eab4ddcb9d01a4a214a') in 0.064039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 11.547474 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2509143de6dcad0b3c07312daff8ea8d') in 0.060637 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 1.242916 seconds.
+  path: Assets/Project/Resources/Fish/BlueSergeon Variant.prefab
+  artifactKey: Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Resources/Fish/BlueSergeon Variant.prefab using Guid(70715c801e28bde4086e31178f1bc71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c20ea4cdd60159d158c24c69801e6e7') in 0.078186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.716 seconds
+Refreshing native plugins compatible for Editor in 4.52 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.606 seconds
+Domain Reload Profiling: 4324ms
+	BeginReloadAssembly (253ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (332ms)
+		LoadAssemblies (448ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (3610ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1857ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (75ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (212ms)
+			ProcessInitializeOnLoadAttributes (1323ms)
+			ProcessInitializeOnLoadMethodAttributes (213ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (30ms)
+Refreshing native plugins compatible for Editor in 8.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.8 KB). Loaded Objects now: 4231.
+Memory consumption went from 151.5 MB to 151.4 MB.
+Total: 9.273000 ms (FindLiveObjects: 0.629800 ms CreateObjectMapping: 0.770800 ms MarkObjects: 7.773400 ms  DeleteObjects: 0.097600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.618 seconds
+Refreshing native plugins compatible for Editor in 3.80 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.492 seconds
+Domain Reload Profiling: 4110ms
+	BeginReloadAssembly (240ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (282ms)
+		LoadAssemblies (381ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (3494ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1890ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (106ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (179ms)
+			ProcessInitializeOnLoadAttributes (1509ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 9.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (102.8 KB). Loaded Objects now: 4246.
+Memory consumption went from 153.7 MB to 153.6 MB.
+Total: 9.258500 ms (FindLiveObjects: 0.610900 ms CreateObjectMapping: 1.519300 ms MarkObjects: 6.981500 ms  DeleteObjects: 0.145400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 10.362 seconds
+Refreshing native plugins compatible for Editor in 21.85 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Shark3D
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 19.467 seconds
+Domain Reload Profiling: 29835ms
+	BeginReloadAssembly (1966ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (79ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (1156ms)
+	RebuildCommonClasses (2404ms)
+	RebuildNativeTypeToScriptingClass (62ms)
+	initialDomainReloadingComplete (131ms)
+	LoadAllAssembliesAndSetupDomain (5804ms)
+		LoadAssemblies (5979ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (286ms)
+			TypeCache.Refresh (136ms)
+				TypeCache.ScanAssembly (67ms)
+			ScanForSourceGeneratedMonoScriptInfo (100ms)
+			ResolveRequiredComponents (46ms)
+	FinalizeReload (19469ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2425ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (99ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (733ms)
+			ProcessInitializeOnLoadAttributes (1503ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 13.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4098 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (156.4 KB). Loaded Objects now: 4708.
+Memory consumption went from 167.4 MB to 167.3 MB.
+Total: 10.223500 ms (FindLiveObjects: 0.552900 ms CreateObjectMapping: 0.392400 ms MarkObjects: 9.071600 ms  DeleteObjects: 0.204500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 17175.796570 seconds.
+  path: Assets/Project/Animations
+  artifactKey: Guid(900557cf35f958b40b5fa865689c0248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations using Guid(900557cf35f958b40b5fa865689c0248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec74964d341e50c0ad57fe62f0c1266') in 0.057767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.326934 seconds.
+  path: Assets/Project/Animations/Shark
+  artifactKey: Guid(441aa08de9075ab4d929761e01b658c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations/Shark using Guid(441aa08de9075ab4d929761e01b658c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edcef02d81f19ac3f02db337319b81b') in 0.003804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.917682 seconds.
+  path: Assets/Project/Animations/Shark/SharkController.controller
+  artifactKey: Guid(21379fda736da814985864cd67b9a1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Project/Animations/Shark/SharkController.controller using Guid(21379fda736da814985864cd67b9a1f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66f9fabe478b3f86c70ca9bfdad2c2c') in 0.107995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  4.998 seconds
+Refreshing native plugins compatible for Editor in 6.56 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Shark3D
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 18.065 seconds
+Domain Reload Profiling: 23073ms
+	BeginReloadAssembly (1805ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (86ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (4ms)
+		CreateAndSetChildDomain (958ms)
+	RebuildCommonClasses (142ms)
+	RebuildNativeTypeToScriptingClass (75ms)
+	initialDomainReloadingComplete (118ms)
+	LoadAllAssembliesAndSetupDomain (2867ms)
+		LoadAssemblies (3175ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (101ms)
+			TypeCache.Refresh (50ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (42ms)
+	FinalizeReload (18067ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2211ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (86ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (251ms)
+			ProcessInitializeOnLoadAttributes (1789ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 10.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4097 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (156.4 KB). Loaded Objects now: 4724.
+Memory consumption went from 169.1 MB to 169.0 MB.
+Total: 28.495300 ms (FindLiveObjects: 2.680200 ms CreateObjectMapping: 3.085000 ms MarkObjects: 20.566200 ms  DeleteObjects: 2.161000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 43b350a4d6e6d1791af0b5038c4bea17 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
