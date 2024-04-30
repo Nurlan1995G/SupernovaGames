@@ -7,20 +7,22 @@ namespace Assets.CodeBase.CameraLogic
     {
         [SerializeField] private float _speedRotate;
 
-        private Vector2 _rotateDirection;
+        private RotateInput _rotateInput;
         private Vector2 _lastDirection;
         
         private float _currentXRotation;
         private float _currentYRotation;
-
-        public void OnRotate(InputAction.CallbackContext context)
+        
+        private void Awake()
         {
-            _rotateDirection = context.ReadValue<Vector2>();
+            _rotateInput = new RotateInput();
+            _rotateInput.Enable();
 
-            Debug.Log(_rotateDirection + " - rotateDirection");
-
-            Rotate(_rotateDirection);
+            _rotateInput.Touchscreen.TouchDelta.performed += OnTouchPerformed;
         }
+
+        private void OnTouchPerformed(InputAction.CallbackContext context) =>
+            Rotate(context.ReadValue<Vector2>());
 
         private void Rotate(Vector2 direction)
         {
@@ -29,15 +31,14 @@ namespace Assets.CodeBase.CameraLogic
                 _currentXRotation += direction.x * _speedRotate * Time.deltaTime;
                 _currentYRotation += -direction.y * _speedRotate * Time.deltaTime;
 
-                _currentYRotation = Mathf.Clamp(_currentYRotation, 45f, 90f);
+                _currentYRotation = Mathf.Clamp(_currentYRotation, -45f, 90f);
 
-                Quaternion rotationX = Quaternion.Euler(0, _currentYRotation, 0);
-                Quaternion rotationY = Quaternion.Euler(_currentXRotation, 0, 0);
+                Quaternion rotationX = Quaternion.Euler(0, _currentXRotation, 0);
+                Quaternion rotationY = Quaternion.Euler(_currentYRotation, 0, 0);
 
                 transform.rotation = rotationX * rotationY;
                 _lastDirection = direction;
             }
-
         }
     }
 }

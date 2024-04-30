@@ -22,7 +22,7 @@ public class RotateScoreToCamera : MonoBehaviour
 
     private void RotateTowardsCamera()
     {
-        Vector3 positionDiff = _transformCamera.position - transform.position;
+        Vector3 positionDiff = -_transformCamera.position - transform.position;
         _positionToLook = new Vector3(positionDiff.x, transform.position.y, positionDiff.z);
 
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(_positionToLook)

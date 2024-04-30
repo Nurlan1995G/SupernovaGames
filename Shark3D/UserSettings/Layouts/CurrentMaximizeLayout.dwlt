@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 50240
+  controlID: 2816
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 50189
+  controlID: 2817
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 50145
+  controlID: 2818
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -236,9 +236,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: f074feffb88ffeffc48ffeffd28ffeff6e98feff7c98feff8a98feff9499feffa6dbfeffb0dbfeffbcdbfeffd67cffffe07cffffec7cffff54afffff08fbffff8e620000a8620000f8620000
+      m_SelectedIDs: 08630000
+      m_LastClickedID: 25352
+      m_ExpandedIDs: 08fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -614,9 +614,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -244, y: -325}
+      snapOffset: {x: 540, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
       index: 10
       layout: 4
@@ -659,9 +659,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.0967984, y: -10.836456, z: 8.128672}
+    m_Target: {x: 36.247604, y: -14.126972, z: 2.810048}
     speed: 2
-    m_Value: {x: -4.0967984, y: -10.836456, z: 8.128672}
+    m_Value: {x: 36.247604, y: -14.126972, z: 2.810048}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -707,13 +707,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.29422203, y: 0.09925966, z: -0.030744605, w: -0.9501002}
+    m_Target: {x: -0.16458891, y: -0.5564218, z: 0.11355986, w: -0.806551}
     speed: 2
-    m_Value: {x: -0.29421398, y: 0.09925695, z: -0.030743765, w: -0.95007426}
+    m_Value: {x: 0.16458891, y: 0.5564218, z: -0.11355986, w: 0.8065509}
   m_Size:
-    m_Target: 17.926783
+    m_Target: 27.98788
     speed: 2
-    m_Value: 17.926783
+    m_Value: 27.98788
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -800,7 +800,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -846,7 +846,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Project/CodeBase/Player
+    - Assets/Project/CodeBase/Input
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -854,16 +854,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Project/CodeBase/Player
+  - Assets/Project/CodeBase/Input
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity Ucheba, Game 3d\Shark3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 82}
-    m_SelectedIDs: 10650000
-    m_LastClickedID: 25872
-    m_ExpandedIDs: 00000000de640000ee640000fa64000000ca9a3b
+    m_SelectedIDs: 16650000
+    m_LastClickedID: 25878
+    m_ExpandedIDs: 0000000000650000106500001865000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -891,7 +891,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000de64000000ca9a3b
+    m_ExpandedIDs: 000000000065000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -916,8 +916,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: a8620000
-    m_LastClickedInstanceID: 25256
+    m_SelectedInstanceIDs: 08630000
+    m_LastClickedInstanceID: 25352
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300006e750000fab7000044b900002cb9000000000000
     m_RenameOverlay:
@@ -1017,7 +1017,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 25256
+  m_LastSelectedObjectID: 25320
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1107,8 +1107,8 @@ MonoBehaviour:
     y: 0
     width: 366
     height: 635
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -1155,8 +1155,8 @@ MonoBehaviour:
     m_CachedPref: -243
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 25256
-  m_LastVerticalScrollValue: 361
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 378
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
