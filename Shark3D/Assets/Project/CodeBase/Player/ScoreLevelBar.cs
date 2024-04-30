@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class ScoreLevelBar : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _scoreText;
+    [field: SerializeField] public TextMeshProUGUI ScoreText;
 
-
-
+    public void SetScore(int score)
+    {
+        ScoreText.text = score.ToString();
+    }
 }

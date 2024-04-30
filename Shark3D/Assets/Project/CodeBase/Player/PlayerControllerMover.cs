@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEditor.PlayerSettings;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerControllerMover : MonoBehaviour

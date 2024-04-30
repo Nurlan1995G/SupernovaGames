@@ -10,7 +10,6 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float _spawnCooldown = 2f;
     
     private FishFactory _fishFactory;
-
     private List<Fish> _fishes = new List<Fish>();
 
     private float _nextSpawn = 0.0f;
@@ -37,8 +36,10 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    public void Construct(FishFactory fishFactory) =>
+    public void Construct(FishFactory fishFactory)
+    {
         _fishFactory = fishFactory;
+    }
 
     public void StartWork()
     {
@@ -61,11 +62,7 @@ public class Spawner : MonoBehaviour
             TypeFish typeFish = (TypeFish)UnityEngine.Random.Range(0, Enum.GetValues(typeof(TypeFish)).Length);
 
             Fish fish = _fishFactory.GetFish(typeFish, _whereToSpawn);
-
-            //ScoreLevel score = _fishFactory.GetScore();
-
-            //score.transform.position = fish.transform.position;
-
+            
             _fishes.Add(fish);
             fish.FishDied += OnFishDied;
 

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3410532586c32459a84bc0357cf825, type: 3}
   m_Name: FishFactory
   m_EditorClassIdentifier: 
-  HedgehogPrefab: {fileID: 1513518292926978197, guid: 00d6339c1a2d9224e91d3273c7cdec43, type: 3}
-  BlueSergeonPrefab: {fileID: 3340854253915591949, guid: 110640bb4c1ae584699ec9e66d28d0ce, type: 3}
-  ClounPrefab: {fileID: 3807193331253675844, guid: b254c1f9755c7fb4591c24d12a01ecc9, type: 3}
+  HedgehogPrefab: {fileID: -2349734708227841965, guid: 5900a2104010eb144a4dee8ab45e2a0f, type: 3}
+  BlueSergeonPrefab: {fileID: 8222625670074664619, guid: 7eb84179a7b5c6440a2cc3472fce1b58, type: 3}
+  ClounPrefab: {fileID: 7145479808271592400, guid: 6eb9f08cbf78f854b9976a70fe6408c7, type: 3}
