@@ -36,8 +36,5 @@ namespace Assets.Project.CodeBase.Fish.Factory
                     throw new InvalidOperationException(nameof(fishType));
             }
         }
-
-        /*public ScoreLevel GetScore() => 
-            _assetProvider.Instantiate(AssetAdress.ScoreLevel);*/
     }
 }

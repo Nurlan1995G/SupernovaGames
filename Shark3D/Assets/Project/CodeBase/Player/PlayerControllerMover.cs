@@ -13,8 +13,13 @@ public class PlayerControllerMover : MonoBehaviour
     private CharacterController _characterController;
     private Vector2 _moveDirection;
 
-    private void Start() =>
+    private Transform _cameraTransform;
+
+    private void Start()
+    {
         _characterController = GetComponent<CharacterController>();
+        _cameraTransform = Camera.main.transform;
+    }
 
     private void Update()
     {
@@ -30,26 +35,27 @@ public class PlayerControllerMover : MonoBehaviour
     private void Move(Vector2 direction)
     {
         Vector3 newDirection = new Vector3(direction.x, 0, direction.y);
-        MoveCharacter(newDirection);
-        RotateCharacter(newDirection);
+
+        Quaternion cameraRotationY = Quaternion.Euler(0, _cameraTransform.eulerAngles.y, 0);
+
+        MoveCharacter(newDirection, cameraRotationY);
+
+        RotateCharacter(newDirection, cameraRotationY);
     }
 
-    public void MoveCharacter(Vector3 moveDirection)
+    public void MoveCharacter(Vector3 moveDirection, Quaternion cameraRotation)
     {
-        moveDirection = moveDirection * _moveSpeed;
-        moveDirection.y = _currentAttractionCharacter;
-        _characterController.Move(moveDirection * Time.deltaTime);
+        Vector3 finalDirection = (cameraRotation  * moveDirection).normalized;
+
+        _characterController.Move(_moveSpeed * Time.deltaTime * finalDirection);
     }
 
-    public void RotateCharacter(Vector3 moveDirection)
+    public void RotateCharacter(Vector3 moveDirection, Quaternion cameraRotation)
     {
-        if (_characterController.isGrounded)
+        if (Vector3.Angle(transform.forward, moveDirection) > 0)
         {
-            if (Vector3.Angle(transform.forward, moveDirection) > 0)
-            {
-                Vector3 newDirection = Vector3.RotateTowards(transform.forward, moveDirection, _rotateSpeed, 0);
-                transform.rotation = Quaternion.LookRotation(newDirection);
-            }
+             Vector3 finalDirection = (cameraRotation * moveDirection).normalized;
+             transform.rotation = Quaternion.LookRotation(_rotateSpeed * Time.deltaTime * finalDirection);
         }
     }
 

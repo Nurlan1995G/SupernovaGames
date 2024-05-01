@@ -8,7 +8,7 @@ namespace Assets.Project.CodeBase.Fish
     {
         [SerializeField] private TextMeshProUGUI _scoreText;
 
-        private RandomLevelFish _randomLevelFish;
+        private RandomServer _randomLevelFish;
 
         public event Action<Fish> FishDied;
 
@@ -16,9 +16,9 @@ namespace Assets.Project.CodeBase.Fish
 
         private void Awake()
         {
-            _randomLevelFish = new RandomLevelFish();
+            _randomLevelFish = new RandomServer();
 
-            ScoreLevel = _randomLevelFish.GetRandomLevel();
+            ScoreLevel = _randomLevelFish.GetRandomCountFish();
 
             _scoreText.text = ScoreLevel.ToString();
         }
