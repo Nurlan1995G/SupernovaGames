@@ -1,20 +1,24 @@
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(LevelStaticData))]
+[CustomEditor(typeof(SharkPositionStaticData))]
 public class LevelStaticDataEditor : UnityEditor.Editor
 {
-    private const string SpawnPointPlayer = "SpawnPointPlayer";
+    private const string SharkEnemy1 = "Shark1";
+    private const string SharkEnemy2 = "Shark2";
 
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
 
-        LevelStaticData levelData = (LevelStaticData)target;
+        SharkPositionStaticData levelData = (SharkPositionStaticData)target;
 
         if (GUILayout.Button("Collect"))
         {
-            levelData.InitPlayerPosition = GameObject.FindWithTag(SpawnPointPlayer).transform.position;
+            levelData.InitSharkOnePosition = GameObject.FindWithTag(SharkEnemy1).transform.position;
+            levelData.InitSharkTwoPosition = GameObject.FindWithTag(SharkEnemy2).transform.position;
         }
+
+        EditorUtility.SetDirty(target);
     }
 }

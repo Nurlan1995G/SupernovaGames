@@ -9,11 +9,11 @@ public class PlayerTrigger : MonoBehaviour
     {
         if (other.TryGetComponent(out Fish fish))
         {
-            Debug.Log("Соприкосновение произошло");
-            Debug.Log(_playerView.ScoreLevel + " - _playerView.Score  PlayerTrigger");
-
-            _playerView.AddScore(fish.ScoreLevel);
-            fish.Destroys();
+            if (_playerView.ScoreLevel >= fish.ScoreLevel)
+            {
+                _playerView.AddScore(fish.ScoreLevel);
+                fish.Destroys();
+            }
         }
     }
 }

@@ -2,6 +2,8 @@
 
 public class RandomServer
 {
+    private SpawnerFish _spawner;
+    
     private float _nextSpawn;
     private float _randomSpawnX;
     private float _randomSpawnZ;
@@ -9,6 +11,11 @@ public class RandomServer
     private float _spawnCooldown;
 
     public Vector3 WhereToSpawn => _whereToSpawn;
+
+    public void Construct(SpawnerFish spawner)
+    {
+        _spawner = spawner;
+    }
 
     public int GetRandomCountFish()
     {
@@ -27,8 +34,8 @@ public class RandomServer
         {
             _nextSpawn = Time.time + _spawnCooldown;
 
-            _randomSpawnX = UnityEngine.Random.Range(-20, 20);
-            _randomSpawnZ = UnityEngine.Random.Range(-20, 20);
+            _randomSpawnX = Random.Range(-20, 20);
+            _randomSpawnZ = Random.Range(-20, 20);
 
             _whereToSpawn = new Vector3(_randomSpawnX, 0.2f, _randomSpawnZ);
         }

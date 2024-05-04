@@ -221,9 +221,9 @@ GameObject:
   - component: {fileID: 1579497082370369827}
   - component: {fileID: 2469199303159883398}
   - component: {fileID: 405514074507203148}
-  - component: {fileID: -2349734708227841965}
   - component: {fileID: 4899378109248672778}
   - component: {fileID: 1980358066829547059}
+  - component: {fileID: 1975488316660557988}
   m_Layer: 0
   m_Name: Hedgehog
   m_TagString: Untagged
@@ -297,19 +297,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-2349734708227841965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2206852426022253465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9af9e31c643bb24fad40e12c6a94dde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scoreText: {fileID: 1013733253786539008}
 --- !u!65 &4899378109248672778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -352,6 +339,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1975488316660557988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206852426022253465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9af9e31c643bb24fad40e12c6a94dde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreText: {fileID: 1013733253786539008}
 --- !u!1 &3024658643347344275
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +364,6 @@ GameObject:
   - component: {fileID: 126893030754027314}
   - component: {fileID: 750804529364511769}
   - component: {fileID: 4852470834904778572}
-  - component: {fileID: 4984748027191180177}
   - component: {fileID: 1759862096311118072}
   m_Layer: 5
   m_Name: Canvas
@@ -456,19 +455,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4984748027191180177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3024658643347344275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9af9e31c643bb24fad40e12c6a94dde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scoreText: {fileID: 1013733253786539008}
 --- !u!114 &1759862096311118072
 MonoBehaviour:
   m_ObjectHideFlags: 0
