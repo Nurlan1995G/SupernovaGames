@@ -7,30 +7,23 @@ public class PlayerControllerMover : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _rotateSpeed;
 
-    [SerializeField] private float _grafiryForce = 20;
-    private float _currentAttractionCharacter;   //текущее придвижение персонажа
+    [SerializeField] private float _grafiryForce = 20f;
 
-    private CharacterController _characterController;
+    private Vector3 _velocityDirection;  
+
+    [SerializeField] private CharacterController _characterController;
     private Vector2 _moveDirection;
 
     private Transform _cameraTransform;
 
-    private void Start()
-    {
-        _characterController = GetComponent<CharacterController>();
+    private void Start() =>
         _cameraTransform = Camera.main.transform;
-    }
 
-    private void Update()
-    {
-        GravityHandling();
+    private void Update() =>
         Move(_moveDirection);
-    }
 
-    public void OnMove(InputAction.CallbackContext context)
-    {
+    public void OnMove(InputAction.CallbackContext context) =>
         _moveDirection = context.ReadValue<Vector2>();
-    }
 
     private void Move(Vector2 direction)
     {
@@ -57,13 +50,5 @@ public class PlayerControllerMover : MonoBehaviour
              Vector3 finalDirection = (cameraRotation * moveDirection).normalized;
              transform.rotation = Quaternion.LookRotation(_rotateSpeed * Time.deltaTime * finalDirection);
         }
-    }
-
-    private void GravityHandling()
-    {
-        if (_characterController.isGrounded == false)
-            _currentAttractionCharacter -= _grafiryForce * Time.deltaTime;
-        else
-            _currentAttractionCharacter = 0;
     }
 }

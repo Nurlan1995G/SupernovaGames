@@ -367,7 +367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328e412213095dd458866634effb3f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnCooldown: 2
+  _spawnCooldown: 0.1
+  _maxCountFish: 100
 --- !u!1 &152253615
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +994,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0700002, y: 5, z: -28.91}
+  m_LocalPosition: {x: 2.0700002, y: 5.138, z: -28.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1146,17 +1147,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663196003909386883, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663196003909386883, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Size.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663196003909386883, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663196003909386883, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2663196003909386883, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_Center.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719642466260023912, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719642466260023912, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4739622929547631326, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
       propertyPath: m_Name
       value: Shark
       objectReference: {fileID: 0}
+    - target: {fileID: 4913600642409356914, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: _localScaleX
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797505303278054737, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+      propertyPath: _characterController
+      value: 
+      objectReference: {fileID: 1033723636}
     - target: {fileID: 8693897820540530362, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 8693897820540530362, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.138
       objectReference: {fileID: 0}
     - target: {fileID: 8693897820540530362, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1198,6 +1263,22 @@ PrefabInstance:
 --- !u!4 &1033723632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8693897820540530362, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+  m_PrefabInstance: {fileID: 1033723631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1033723633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4913600642409356914, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
+  m_PrefabInstance: {fileID: 1033723631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43645de6e79f6f945a2057fb38b30fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!143 &1033723636 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 2251948374992208705, guid: ce532a821b3d34a4685c2a11d0a8d531, type: 3}
   m_PrefabInstance: {fileID: 1033723631}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1125074646
@@ -1509,6 +1590,8 @@ MonoBehaviour:
   _spawner: {fileID: 140702512}
   _fishStaticData: {fileID: 11400000, guid: 3daa46272505f6947bcc026680de7cd3, type: 2}
   _sharkPositionStaticData: {fileID: 11400000, guid: c71aebaed73d14b4aa18e569fe8793fe, type: 2}
+  _sharkStaticData: {fileID: 11400000, guid: 167da7f5af830a6409ab27b8f7eb1e5a, type: 2}
+  _playerView: {fileID: 1033723633}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

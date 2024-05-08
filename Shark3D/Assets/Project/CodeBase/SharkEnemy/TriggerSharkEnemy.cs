@@ -1,10 +1,9 @@
-﻿using Assets.Project.CodeBase.Fish;
-using Assets.Project.CodeBase.SharkEnemy;
+﻿using Assets.Project.CodeBase.SharkEnemy;
 using UnityEngine;
 
 public class TriggerSharkEnemy : MonoBehaviour
 {
-    [SerializeField] private SharkView _sharkView;
+    [SerializeField] private SharkModel _sharkView;
  
     private void OnTriggerEnter(Collider other) 
     {
@@ -14,6 +13,14 @@ public class TriggerSharkEnemy : MonoBehaviour
             {
                 _sharkView.AddScore(fish.ScoreLevel);
                 fish.Destroys();
+            }
+         }
+
+         if(other.TryGetComponent(out PlayerView playerView))
+         {
+            if(_sharkView.ScoreLevel >= playerView.ScoreLevel)
+            {
+                Debug.Log("Акула бот убила ИГРОКА");
             }
          }
     }

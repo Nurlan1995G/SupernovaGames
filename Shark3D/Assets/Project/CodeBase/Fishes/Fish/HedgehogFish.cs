@@ -1,6 +1,7 @@
-﻿using Assets.Project.CodeBase.Fish;
-
-public class HedgehogFish : Fish
+﻿public class HedgehogFish : Fish
 {
+    private int _scoreLevel = 16;
 
+    protected override int WriteScoreLevel() =>
+        ScoreLevel = _scoreLevel;
 }

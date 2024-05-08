@@ -1,40 +1,53 @@
 ﻿using Assets.Project.AssetProviders;
+using Assets.Project.CodeBase.Fish.Factory;
 using System;
 using UnityEngine;
 
-namespace Assets.Project.CodeBase.Fish.Factory
+public class FishFactory
 {
-    public class FishFactory
+    private readonly FishStaticData _fishStaticData;
+    private readonly AssetProvider _assetProvider;
+
+    public FishFactory(FishStaticData fishStaticData, AssetProvider assetProvider)
     {
-        private readonly FishStaticData _fishStaticData;
-        private readonly AssetProvider _assetProvider;
+        _fishStaticData = fishStaticData ?? throw new ArgumentNullException(nameof(fishStaticData));
+        _assetProvider = assetProvider ?? throw new ArgumentNullException(nameof(assetProvider));
+    }
 
-        public FishFactory(FishStaticData fishStaticData, AssetProvider assetProvider)
+    public Fish GetFish(TypeFish fishType, Vector3 whereToSpawn)
+    { 
+        switch (fishType)
         {
-            _fishStaticData = fishStaticData ?? throw new ArgumentNullException(nameof(fishStaticData));
-            _assetProvider = assetProvider ?? throw new ArgumentNullException(nameof(assetProvider));
-        }
-
-        public Fish GetFish(TypeFish fishType, Vector3 whereToSpawn)
-        {
-            switch (fishType)
-            {
-                case TypeFish.Hedgehog:
-                    Debug.Log($"Instantiate HedgehogFish");
+            case TypeFish.Hedgehog:
                     return _assetProvider.Instantiate(_fishStaticData.HedgehogPrefab, whereToSpawn, Quaternion.identity);
 
-                case TypeFish.BlueSergeon:
-                    Debug.Log($"Instantiate BlueSergeonFish");
+            case TypeFish.BlueSergeon:
                     return _assetProvider.Instantiate(_fishStaticData.BlueSergeonPrefab, whereToSpawn
                         , Quaternion.identity);
 
-                case TypeFish.Cloun:
-                    Debug.Log($"Instantiate ClounFish");
+            case TypeFish.Cloun:
                     return _assetProvider.Instantiate(_fishStaticData.ClounPrefab, whereToSpawn, Quaternion.identity);
 
-                default:
+            case TypeFish.Angel:
+                return _assetProvider.Instantiate(_fishStaticData.AngelFish, whereToSpawn, Quaternion.identity);
+
+            case TypeFish.Beluga:
+                return _assetProvider.Instantiate(_fishStaticData.BelugaFish, whereToSpawn, Quaternion.identity);
+
+            case TypeFish.Picasso:
+                return _assetProvider.Instantiate(_fishStaticData.PicassoFish, whereToSpawn, Quaternion.identity);
+
+            case TypeFish.Parrot:
+                return _assetProvider.Instantiate(_fishStaticData.ParrotFish, whereToSpawn, Quaternion.identity);
+
+            case TypeFish.Napoleon:
+                return _assetProvider.Instantiate(_fishStaticData.NapoleonFish, whereToSpawn, Quaternion.identity);
+
+            case TypeFish.Luna:
+                return _assetProvider.Instantiate(_fishStaticData.LunaFish, whereToSpawn, Quaternion.identity);
+
+            default:
                     throw new InvalidOperationException(nameof(fishType));
-            }
         }
     }
 }

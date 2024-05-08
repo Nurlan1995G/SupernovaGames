@@ -1,5 +1,3 @@
-using Assets.Project.CodeBase.Fish;
-using Assets.Project.CodeBase.Fish.Factory;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -18,17 +16,24 @@ public class SpawnerFish : MonoBehaviour
     private Coroutine _spawnCoroutine;
 
     public int MaxCountFish => _maxCountFish;
+    public List<Fish> Fishes => _fishes;
 
-    private void Update()
-    {
-        if (_random != null)
-            _random.GetRandomPositionFish();
-    }
+    private void Update() => 
+        StartSpawn();
 
     public void Construct(FishFactory fishFactory, RandomServer random)
     {
         _fishFactory = fishFactory;
         _random = random;
+    }
+    
+    private void StartSpawn()
+    {
+        while (_fishes.Count < _maxCountFish)
+        {
+            Fish fish = SpawnFishes();
+            AddFish(fish);
+        }
     }
 
     public void StartWork()
@@ -48,14 +53,18 @@ public class SpawnerFish : MonoBehaviour
     {
         while (_fishes.Count < _maxCountFish)
         {
-            TypeFish typeFish = (TypeFish)UnityEngine.Random.Range(0, Enum.GetValues(typeof(TypeFish)).Length);
-
-            Fish fish = _fishFactory.GetFish(typeFish, _random.WhereToSpawn);
+            Fish fish = SpawnFishes();
 
             AddFish(fish);
 
             yield return new WaitForSeconds(_spawnCooldown);
         }
+    }
+
+    private Fish SpawnFishes()
+    {
+        Fish fish = _fishFactory.GetFish(_random.SpawnFishes(), _random.GetRandomPosition());
+        return fish;
     }
 
     private void AddFish(Fish fish)
@@ -68,5 +77,6 @@ public class SpawnerFish : MonoBehaviour
     {
         fish.FishDied -= OnFishDied;
         _fishes.Remove(fish);
+        _random.RemoveFish(fish);
     }
 }

@@ -1,6 +1,12 @@
 ﻿public enum TypeFish
 {
-    Cloun,
+    Cloun = 1,
     BlueSergeon,
-    Hedgehog
+    Hedgehog,
+    Angel,
+    Beluga,
+    Picasso,
+    Parrot,
+    Napoleon,
+    Luna
 }

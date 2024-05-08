@@ -1,4 +1,5 @@
 ﻿using Assets.Project.CodeBase.Fish;
+using Assets.Project.CodeBase.SharkEnemy;
 using UnityEngine;
 
 public class PlayerTrigger : MonoBehaviour
@@ -13,6 +14,15 @@ public class PlayerTrigger : MonoBehaviour
             {
                 _playerView.AddScore(fish.ScoreLevel);
                 fish.Destroys();
+            }
+        }
+
+        if(other.TryGetComponent(out SharkModel sharkModel))
+        {
+            if(_playerView.ScoreLevel >  sharkModel.ScoreLevel)
+            {
+                _playerView.AddScore(sharkModel.ScoreLevel);
+                sharkModel.Destroys();
             }
         }
     }
