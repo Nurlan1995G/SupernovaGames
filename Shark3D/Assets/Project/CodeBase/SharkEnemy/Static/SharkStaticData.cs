@@ -7,6 +7,6 @@ namespace Assets.Project.CodeBase.SharkEnemy.Static
     {
         [field: SerializeField] public float SpeedMove;
         [field: SerializeField] public float RotateSpeed;
-        [field: SerializeField] public float MinimalDistanceToPlayer;
+        [field: SerializeField] public float MinimalDistanceToObject;
     }
 }

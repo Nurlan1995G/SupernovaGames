@@ -54,7 +54,7 @@ public class AgentBotSharkMoveToPlayer : MonoBehaviour
     }
 
     private bool IsHeroNotReached() =>
-        Vector3.Distance(_agent.transform.position, _player.transform.position) <= _sharkStaticData.MinimalDistanceToPlayer;
+        Vector3.Distance(_agent.transform.position, _player.transform.position) <= _sharkStaticData.MinimalDistanceToObject;
 }
 
 public static class DataExtension
