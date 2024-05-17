@@ -2,6 +2,7 @@
 using Assets.Project.CodeBase.SharkEnemy.Factory;
 using Assets.Project.CodeBase.SharkEnemy.Static;
 using System;
+using UnityEngine;
 
 namespace Assets.Project.CodeBase.Loading
 {
@@ -25,13 +26,25 @@ namespace Assets.Project.CodeBase.Loading
             InitShark(levelStaticData);
         }
 
+        public void RespawnBotShark(GameObject gameObject)
+        {
+            InitShark(_levelStaticData);
+        }
+
         private void InitShark(SharkPositionStaticData levelStaticData)
         {
-            BotSharkView botShark1 = _factoryShark.CreateSharkEnemy(AssetAdress.SharkEnemy1, levelStaticData.InitSharkOnePosition);
-            BotSharkView botShark2 = _factoryShark.CreateSharkEnemy(AssetAdress.SharkEnemy2, levelStaticData.InitSharkTwoPosition);
+            CreateSharkScene( levelStaticData.InitSharkOnePosition, AssetAdress.SharkEnemy1);
 
-            botShark1.Construct(_spawnerFish, _sharkStaticData, _playerView);
-            botShark2.Construct(_spawnerFish, _sharkStaticData, _playerView);
+            CreateSharkScene(levelStaticData.InitSharkTwoPosition, AssetAdress.SharkEnemy2);
+        }
+
+        private BotSharkView CreateSharkScene(Vector3 positionShark, string sharkEnemy)
+        {
+            BotSharkView botShark = _factoryShark.CreateSharkEnemy(sharkEnemy, positionShark);
+
+            botShark.Construct(_spawnerFish, _sharkStaticData, _playerView);
+
+            return botShark;
         }
     }
 }

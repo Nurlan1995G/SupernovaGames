@@ -125,32 +125,71 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b3b660ea-a2a3-402b-a33d-436069749a77",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
         {
-            "name": "MouseRotate",
-            "id": "ae2c8c00-f556-4bdd-8caf-e76e709fce1a",
+            "name": "Look",
+            "id": "035b3ad8-f72f-4dd5-abeb-c23656f3108e",
             "actions": [
                 {
-                    "name": "Mouse",
-                    "type": "PassThrough",
-                    "id": "f1bb6804-600a-451a-9b66-97e45cc8d471",
-                    "expectedControlType": "",
+                    "name": "RotateCamera",
+                    "type": "Button",
+                    "id": "090bdcef-8032-4b46-809a-cfb08e680d71",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "24001f79-f2f6-4a3a-97f4-68c02d6caba2",
-                    "path": "<Touchscreen>/delta",
+                    "id": "a7e7df4e-baaf-49b2-967d-06d98c9e1a09",
+                    "path": "<Gamepad>/rightStick/right",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Mouse",
-                    "action": "Mouse",
+                    "groups": "",
+                    "action": "RotateCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Mouse",
+            "id": "adfd4f02-bc21-42aa-975e-e9578558dd3d",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "PassThrough",
+                    "id": "0cb53a8c-3ac4-4d2f-870f-9a1ae220a29f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3dda57af-689a-4a02-8300-1b08163970c1",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -179,6 +218,11 @@
                     "isOR": false
                 }
             ]
+        },
+        {
+            "name": "Jostick",
+            "bindingGroup": "Jostick",
+            "devices": []
         }
     ]
 }

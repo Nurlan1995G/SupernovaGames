@@ -2,132 +2,137 @@
 using Assets.Project.CodeBase.SharkEnemy;
 using System.Collections.Generic;
 using UnityEngine;
-using Assets.Project.CodeBase.SharkEnemy.Static;
 
 public class DetecterToObject
 {
     public const string PlayerTag = "Player";
-    public const string SharkBotTag = "Shark1";
-
-    private readonly AgentBotSharkMoveToPlayerState _agentBotSharkMoveToPlayer;
-    private readonly AgentMoveBotSharkMoveToSharkState _agentMoveBotSharkMoveToShark;
-    private readonly PlayerView _player;
 
     private readonly AgentMoveState _agentMoveState;
     private readonly SharkModel _sharkModel;
-    private readonly SharkStaticData _sharkStaticData;
-    public List<string> SharkBots = new List<string> { "Shark1", "Shark2" };
+
+    private List<string> _sharkBotsTag = new List<string> { "Shark1", "Shark2" };
+
     private float _timeLastDetected;
     private float _chaseDuration = 10f;
+    private bool _isChasing = true;
+    private float _cooldownTimer;
 
-    public DetecterToObject( AgentMoveState agentMoveState,  SharkModel sharkModel, SharkStaticData sharkStaticData)
+    public DetecterToObject( AgentMoveState agentMoveState,  SharkModel sharkModel)
     {
-        //_agentBotSharkMoveToPlayer = agentBotSharkMoveToPlayer;
-        //_agentMoveBotSharkMoveToShark = agentMoveBotSharkMoveToShark;
-        //_player = player;
-
         _agentMoveState = agentMoveState;
         _sharkModel = sharkModel;
-        _sharkStaticData = sharkStaticData;
     }
 
-    public void DetectObjectfd(Transform transform, LayerMask layerMask, float detectionRadius)
+    public void DetectObject(Transform transform, float detectionRadius)
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRadius, layerMask);
-       
-        foreach (Collider collider in colliders)
+        GameObject targetPlayer = StaticClassLogic.FindObject(PlayerTag);
+
+        FindMissingShark(transform, targetPlayer);
+
+        if (targetPlayer != null)
         {
-            Debug.Log($"{collider.gameObject} - gameObject");
-
-            // Проверяем, является ли обнаруженный объект игроком или другой акулой
-            if (collider.CompareTag(PlayerTag))
+            if (_agentMoveState.IsObjectNotReached(targetPlayer, transform) && targetPlayer.CompareTag(PlayerTag))
             {
-                Debug.Log("DetecterToObkect - DetectObject - нашли игрока");
-                PositionPlayerObject(collider.gameObject, transform);
+                if (_isChasing)
+                {
+                    if (targetPlayer.GetComponent<PlayerView>().ScoreLevel > _sharkModel.ScoreLevel)
+                        FleeFromObject(targetPlayer, transform);
+                    else
+                        PositionPlayerObject(targetPlayer, transform);
+                }
             }
+        }
 
-            if (collider.CompareTag(SharkBotTag))
+        GetDelayTime();
+    }
+
+    private void GetDelayTime()
+    {
+        if (!_isChasing && _cooldownTimer > 0)
+        {
+            _cooldownTimer -= Time.deltaTime;
+
+            if (_cooldownTimer < 0)
+                _isChasing = true;
+        }
+    }
+
+    private void FindMissingShark(Transform transform, GameObject targetPlayer)
+    {
+        foreach (var sharkTag in _sharkBotsTag)
+        {
+            GameObject targetShark = StaticClassLogic.FindObject(sharkTag);
+
+            if(targetShark != null)
             {
-                PositionSharkObject(collider.gameObject, transform);
+                SharkModel sharkModel = targetShark.GetComponent<SharkModel>(); 
+                
+                if (sharkModel != _sharkModel)
+                {
+                    if (_agentMoveState.IsObjectNotReached(sharkModel.gameObject, transform) 
+                    && !_agentMoveState.IsObjectNotReached(targetPlayer, transform))
+                    {
+                        if (_isChasing)
+                        {
+                            if (sharkModel.ScoreLevel > _sharkModel.ScoreLevel)
+                                FleeFromObject(sharkModel.gameObject, transform);
+                            else
+                                PositionSharkObject(sharkModel.gameObject, transform);
+                        }
+                    }
+                }
             }
         }
     }
 
-    public void DetectObject(Transform transform, LayerMask layerMask, float detectionRadius)
+    private void FleeFromObject(GameObject targetPlayer, Transform transform)
     {
-        GameObject target = GameObject.FindGameObjectWithTag(PlayerTag);
+        Vector3 fleeDirection = transform.position - targetPlayer.transform.position;
+        Vector3 targetDirection = transform.position + fleeDirection;
 
-        if (_agentMoveState.IsObjectNotReached(target,transform) && target.CompareTag(PlayerTag))
-        {
-            PositionPlayerObject(target.gameObject, transform);
-        }
-
-        if (target.CompareTag(SharkBotTag))
-        {
-            PositionSharkObject(target.gameObject, transform);
-        }
+        _agentMoveState.MoveTo(targetDirection, transform);
     }
 
     private void PositionSharkObject(GameObject positionShark, Transform transform)
     {
-        // Проверяем, является ли обнаруженный объект игроком или акулой
-        if ((positionShark.GetComponent<SharkModel>().ScoreLevel < _sharkModel.ScoreLevel))
+        if (_isChasing)
         {
-            if (_timeLastDetected < _chaseDuration)
+            if (positionShark.GetComponent<SharkModel>().ScoreLevel < _sharkModel.ScoreLevel)
             {
-                _agentMoveState.MoveTo(positionShark.transform.position, transform);
-                _agentMoveState.IsChangedStateToShark = true;
+                if (_timeLastDetected < _chaseDuration)
+                {
+                    _agentMoveState.MoveTo(positionShark.transform.position, transform);
 
-                _timeLastDetected += Time.deltaTime;
-            }
-            else
-            {
-                _timeLastDetected = 0;
-                _agentMoveState.IsChangedStateToShark = false;
-                Debug.Log("Произошло обнуление");
+                    _timeLastDetected += Time.deltaTime;
+                }
+                else
+                    ResetTimePursuit();
             }
         }
     }
 
     private void PositionPlayerObject(GameObject positionTarget, Transform transform)
     {
-        // Проверяем, является ли обнаруженный объект игроком или акулой
-        if ((positionTarget.GetComponent<PlayerView>().ScoreLevel < _sharkModel.ScoreLevel))
+        if (_isChasing)
         {
-            if (_timeLastDetected < _chaseDuration)
+            if (positionTarget.GetComponent<PlayerView>().ScoreLevel < _sharkModel.ScoreLevel)
             {
-                _agentMoveState.MoveTo(positionTarget.transform.position, transform);
-
-                _timeLastDetected += Time.deltaTime;
-                Debug.Log(_timeLastDetected + " - timeLast");
-            }
-            else
-            {
-                _timeLastDetected = 0;
-                Debug.Log(_timeLastDetected + " - timeLast");
-                Debug.Log("Произошло обнуление");
-            }
-        }
-    }
-
-    private void PositionSharkObjects(GameObject positionShark, Transform transform)
-    {
-            // Проверяем, является ли обнаруженный объект игроком или акулой
-            if (( positionShark.GetComponent<SharkModel>().ScoreLevel < _sharkModel.ScoreLevel))
-            {
-                if (_timeLastDetected <= _chaseDuration)
+                if (_timeLastDetected < _chaseDuration)
                 {
-                    _agentMoveBotSharkMoveToShark.Move(positionShark.transform.position, transform);
-                    _agentMoveBotSharkMoveToShark.IsChangedStateToShark = true;
+                    _agentMoveState.MoveTo(positionTarget.transform.position, transform);
 
                     _timeLastDetected += Time.deltaTime;
                 }
                 else
-                {
-                    _timeLastDetected = 0;
-                    _agentMoveBotSharkMoveToShark.IsChangedStateToShark = false;
-                    Debug.Log("Произошло обнуление");
-                }
+                    ResetTimePursuit();
             }
+        }
+    }
+
+    private void ResetTimePursuit()
+    {
+        _timeLastDetected = 0;
+        _isChasing = false;
+        _cooldownTimer = _chaseDuration / 2;
     }
 }

@@ -7,8 +7,8 @@ namespace Assets.Project.CodeBase.SharkEnemy.StateMashine.State
 {
     public class AgentMoveState : IState
     {
-        protected NavMeshAgent Agent;
-        protected SharkModel SharkModel;
+        protected NavMeshAgent _agent;
+        protected SharkModel _sharkModel;
         private SharkStaticData _sharkStaticData;
         private readonly SpawnerFish _spawnerFish;
         private DetecterToObject _detecterToObject;
@@ -20,21 +20,27 @@ namespace Assets.Project.CodeBase.SharkEnemy.StateMashine.State
 
         public AgentMoveState (NavMeshAgent agent, SharkModel sharkModel, SharkStaticData sharkStaticData, SpawnerFish spawnerFish)
         {
-            Agent = agent;
-            SharkModel = sharkModel;
+            _agent = agent;
+            _sharkModel = sharkModel;
             _sharkStaticData = sharkStaticData;
             _spawnerFish = spawnerFish;
 
-            _detecterToObject = new DetecterToObject(this, sharkModel, sharkStaticData);
+            _agent.speed = _sharkStaticData.SpeedMove;
+
+            _detecterToObject = new DetecterToObject(this, sharkModel);
             _detectorFish = new DetectorFish(sharkModel,this);
         }
 
-        public bool IsObjectNotReached(GameObject target, Transform transform) =>
-            Vector3.Distance(target.transform.position, transform.position) <= _sharkStaticData.MinimalDistanceToObject;
+        public bool IsObjectNotReached(GameObject target, Transform transform)
+        {
+            if(target == null) return false;
+
+            return Vector3.Distance(target.transform.position, transform.position) <= _sharkStaticData.MinimalDistanceToObject;
+        }
 
         public void MoveTo(Vector3 position, Transform transform)
         {
-            Agent.destination = position;
+            _agent.destination = position;
             RotateCharacter(position, transform, _sharkStaticData.RotateSpeed);
         }
 
@@ -57,10 +63,9 @@ namespace Assets.Project.CodeBase.SharkEnemy.StateMashine.State
 
         public virtual void Update()
         {
-            _detectorFish.FindToFish(_spawnerFish, SharkModel.transform, Agent);
-            
+            _detectorFish.FindToFish(_spawnerFish, _sharkModel.transform, _agent);
 
-            _detecterToObject.DetectObject(SharkModel.transform, LayerMask.GetMask("Player", "Shark1"), _sharkStaticData.MinimalDistanceToObject);
+            _detecterToObject.DetectObject(_sharkModel.transform, _sharkStaticData.MinimalDistanceToObject);
         }
     }
 }

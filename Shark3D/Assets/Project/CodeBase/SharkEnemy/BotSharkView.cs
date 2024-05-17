@@ -8,7 +8,6 @@ public class BotSharkView : MonoBehaviour
 {   
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private SharkModel _sharkModel;
-    [SerializeField] private AgentBotSharkMoveToPlayer _agentBotSharkMoveToPlayer;
 
     private float _rotateSpeed = 50f;
         

@@ -54,12 +54,12 @@ namespace Assets.Project.CodeBase.SharkEnemy.StateMashine.State
                 Debug.Log("Акуле боту обнаружен объект: " + targetObject.name);
 
                 // Проверяем, является ли обнаруженный объект игроком или акулой
-                if ((targetObject.CompareTag("Player") && _player.ScoreLevel < SharkModel.ScoreLevel))
+                if ((targetObject.CompareTag("Player") && _player.ScoreLevel < _sharkModel.ScoreLevel))
                 {
                     if (_timeLastDetected <= _chaseDuration)
                     {
                         Debug.Log("Акуле боту начинает преследование объекта: " + targetObject.name);
-                        MoveTo(targetObject.transform.position, SharkModel.transform);
+                        MoveTo(targetObject.transform.position, _sharkModel.transform);
                         _timeLastDetected += Time.deltaTime;
                     }
                     else

@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerControllerMover : MonoBehaviour
@@ -7,23 +6,33 @@ public class PlayerControllerMover : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _rotateSpeed;
 
-    [SerializeField] private float _grafiryForce = 20f;
-
-    private Vector3 _velocityDirection;  
-
     [SerializeField] private CharacterController _characterController;
-    private Vector2 _moveDirection;
 
     private Transform _cameraTransform;
 
-    private void Start() =>
+    private PlayerInput _input;
+
+    private void Awake()
+    {
         _cameraTransform = Camera.main.transform;
 
-    private void Update() =>
-        Move(_moveDirection);
+        _input = new PlayerInput();
 
-    public void OnMove(InputAction.CallbackContext context) =>
-        _moveDirection = context.ReadValue<Vector2>();
+    }
+
+    private void OnEnable()
+    {
+        _input.Enable();
+    }
+
+    private void Update()
+    {
+        Vector2 moveDirection = _input.Player.Move.ReadValue<Vector2>();
+        Move(moveDirection);
+    }
+
+    private void OnDisable() => 
+        _input.Disable();
 
     private void Move(Vector2 direction)
     {

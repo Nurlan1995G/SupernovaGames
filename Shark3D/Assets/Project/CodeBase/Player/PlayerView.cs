@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Assets.Project.CodeBase.SharkEnemy;
+using System;
+using UnityEngine;
 
 public class PlayerView : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class PlayerView : MonoBehaviour
     public int ScoreLevel => _score;
 
     private int _g = 10;
+    public Action<PlayerView> PlayerDied;
 
     private void Update()
     {
@@ -30,5 +33,11 @@ public class PlayerView : MonoBehaviour
     {
         _score += score;
         _scoreLevelBar.SetScore(_score);
+    }
+
+    public void Destroys()
+    {
+        PlayerDied?.Invoke(this);
+        gameObject.SetActive(false);
     }
 }

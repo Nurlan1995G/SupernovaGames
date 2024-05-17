@@ -1,27 +1,44 @@
 ﻿using Assets.Project.CodeBase.SharkEnemy;
+using System;
 using UnityEngine;
 
 public class TriggerSharkEnemy : MonoBehaviour
 {
-    [SerializeField] private SharkModel _sharkView;
+    [SerializeField] private SharkModel _sharkModel;
  
     private void OnTriggerEnter(Collider other) 
     {
          if(other.TryGetComponent(out Fish fish))
          {
-            if (_sharkView.ScoreLevel >= fish.ScoreLevel)
+            if (_sharkModel.ScoreLevel >= fish.ScoreLevel)
             {
-                _sharkView.AddScore(fish.ScoreLevel);
+                _sharkModel.AddScore(fish.ScoreLevel);
                 fish.Destroys();
             }
          }
 
          if(other.TryGetComponent(out PlayerView playerView))
          {
-            if(_sharkView.ScoreLevel >= playerView.ScoreLevel)
+            if(_sharkModel.ScoreLevel >= playerView.ScoreLevel)
             {
-                Debug.Log("Акула бот убила ИГРОКА");
+                _sharkModel.AddScore(playerView.ScoreLevel);
+                playerView.Destroys();
+                //playerView.PlayerDied += OnChangedDestoroys;
             }
          }
+
+        if (other.TryGetComponent(out SharkModel targetSharkModel))
+        {
+            if (_sharkModel.ScoreLevel > targetSharkModel.ScoreLevel && _sharkModel != targetSharkModel)
+            {
+                _sharkModel.AddScore(targetSharkModel.ScoreLevel);
+                targetSharkModel.Destroys();
+            }
+        }
+    }
+
+    private void OnChangedDestoroys(PlayerView playerView)
+    {
+
     }
 }

@@ -50,6 +50,54 @@ public partial class @RotateInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Mouse"",
+            ""id"": ""7d65a214-2f3b-4b28-a9d2-930dff6b0297"",
+            ""actions"": [
+                {
+                    ""name"": ""RightButton"",
+                    ""type"": ""Value"",
+                    ""id"": ""72f80ef4-3a72-490e-a417-4075610b2729"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseSrollWheel"",
+                    ""type"": ""Value"",
+                    ""id"": ""67f97475-26de-4f1c-aba9-f3eb12feac6a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""e672e74e-0b14-46fa-baaa-6b65ea7817bd"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mouse"",
+                    ""action"": ""RightButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0a20c058-91a4-4376-beb1-f03db3907fb5"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseSrollWheel"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -69,6 +117,10 @@ public partial class @RotateInput: IInputActionCollection2, IDisposable
         // Touchscreen
         m_Touchscreen = asset.FindActionMap("Touchscreen", throwIfNotFound: true);
         m_Touchscreen_TouchDelta = m_Touchscreen.FindAction("TouchDelta", throwIfNotFound: true);
+        // Mouse
+        m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
+        m_Mouse_RightButton = m_Mouse.FindAction("RightButton", throwIfNotFound: true);
+        m_Mouse_MouseSrollWheel = m_Mouse.FindAction("MouseSrollWheel", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -172,6 +224,60 @@ public partial class @RotateInput: IInputActionCollection2, IDisposable
         }
     }
     public TouchscreenActions @Touchscreen => new TouchscreenActions(this);
+
+    // Mouse
+    private readonly InputActionMap m_Mouse;
+    private List<IMouseActions> m_MouseActionsCallbackInterfaces = new List<IMouseActions>();
+    private readonly InputAction m_Mouse_RightButton;
+    private readonly InputAction m_Mouse_MouseSrollWheel;
+    public struct MouseActions
+    {
+        private @RotateInput m_Wrapper;
+        public MouseActions(@RotateInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @RightButton => m_Wrapper.m_Mouse_RightButton;
+        public InputAction @MouseSrollWheel => m_Wrapper.m_Mouse_MouseSrollWheel;
+        public InputActionMap Get() { return m_Wrapper.m_Mouse; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MouseActions set) { return set.Get(); }
+        public void AddCallbacks(IMouseActions instance)
+        {
+            if (instance == null || m_Wrapper.m_MouseActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MouseActionsCallbackInterfaces.Add(instance);
+            @RightButton.started += instance.OnRightButton;
+            @RightButton.performed += instance.OnRightButton;
+            @RightButton.canceled += instance.OnRightButton;
+            @MouseSrollWheel.started += instance.OnMouseSrollWheel;
+            @MouseSrollWheel.performed += instance.OnMouseSrollWheel;
+            @MouseSrollWheel.canceled += instance.OnMouseSrollWheel;
+        }
+
+        private void UnregisterCallbacks(IMouseActions instance)
+        {
+            @RightButton.started -= instance.OnRightButton;
+            @RightButton.performed -= instance.OnRightButton;
+            @RightButton.canceled -= instance.OnRightButton;
+            @MouseSrollWheel.started -= instance.OnMouseSrollWheel;
+            @MouseSrollWheel.performed -= instance.OnMouseSrollWheel;
+            @MouseSrollWheel.canceled -= instance.OnMouseSrollWheel;
+        }
+
+        public void RemoveCallbacks(IMouseActions instance)
+        {
+            if (m_Wrapper.m_MouseActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IMouseActions instance)
+        {
+            foreach (var item in m_Wrapper.m_MouseActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_MouseActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public MouseActions @Mouse => new MouseActions(this);
     private int m_MouseSchemeIndex = -1;
     public InputControlScheme MouseScheme
     {
@@ -184,5 +290,10 @@ public partial class @RotateInput: IInputActionCollection2, IDisposable
     public interface ITouchscreenActions
     {
         void OnTouchDelta(InputAction.CallbackContext context);
+    }
+    public interface IMouseActions
+    {
+        void OnRightButton(InputAction.CallbackContext context);
+        void OnMouseSrollWheel(InputAction.CallbackContext context);
     }
 }

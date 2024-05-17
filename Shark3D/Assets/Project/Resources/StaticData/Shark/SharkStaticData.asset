@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f244f91128e2d7a41a4d067f7048876e, type: 3}
   m_Name: SharkStaticData
   m_EditorClassIdentifier: 
-  SpeedMove: 5
+  SpeedMove: 4
   RotateSpeed: 50
   MinimalDistanceToObject: 10
